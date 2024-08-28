@@ -1,0 +1,56 @@
+@page {
+    size: A4 landscape;
+    margin: 20mm;
+}
+
+.certificate-container {
+    width: 297mm;
+    height: 210mm;
+    margin: 0 auto;
+    padding: 20mm;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10mm;
+    left: 15mm;
+    width: 70mm;
+    height: auto;
+}
+
+.certificate-header {
+    text-align: center;
+    margin-top: 15mm;
+}
+
+.certificate-content {
+    text-align: center;
+}
+
+.certificate-footer {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 45%;
+    bottom: 10mm;
+    right: 15mm;
+}
+
+.underline-text {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #aaa;
+}
